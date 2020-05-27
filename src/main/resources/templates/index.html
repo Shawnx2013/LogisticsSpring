@@ -18,7 +18,6 @@
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop" id="register">Register</button>
         </form>
     </div>
-
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -54,5 +53,12 @@
             </div>
         </div>
     </div>
+
+    <form action="#" th:action="@{/login}" th:object="${user}" method="post">
+        <p>Username: <input type="text" th:field="*{username}" /></p>
+        <p>Password: <input type="text" th:field="*{password}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+
 </body>
 <footer th:replace="fragments/components :: footer"></footer>

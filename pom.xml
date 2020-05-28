@@ -45,11 +45,18 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
 		<dependency>
-			<groupId>org.jetbrains</groupId>
-			<artifactId>annotations</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-			<scope>compile</scope>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>3.12.4</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-core -->
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongodb-driver-core</artifactId>
+			<version>3.12.4</version>
 		</dependency>
 	</dependencies>
 

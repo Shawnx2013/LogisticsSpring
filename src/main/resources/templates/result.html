@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p>Hi <span th:text="${name}"></span></p>
+<p th:text="'username: ' + ${user.username}"></p>
+<p th:text="'password: ' + ${user.password}"></p>
+<a href="/">Log Out</a>
+</body>
+</html>
